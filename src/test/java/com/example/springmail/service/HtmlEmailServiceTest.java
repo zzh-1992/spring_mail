@@ -48,14 +48,19 @@ class HtmlEmailServiceTest {
                 Map.of(
                         "username", "jdoe",
                         "expireDate", "2026-06-30",
-                        "persona", "Data Analyst"));
+                        "persona", "Data Analyst",
+                        "reviewUrl", "https://portal.example.com/access-review"));
 
         assertThat(rendered).contains("jdoe");
         assertThat(rendered).contains("2026-06-30");
         assertThat(rendered).contains("Data Analyst");
+        assertThat(rendered).contains("href=\"https://portal.example.com/access-review\"");
+        assertThat(rendered).contains("Review Access Now");
+        assertThat(rendered).contains("arcsize=\"60%\"");
+        assertThat(rendered).contains("stroke=\"f\"");
         assertThat(rendered).contains("cid:java");
         assertThat(rendered).contains("cid:user-access-review-slide3");
-        assertThat(rendered).doesNotContain("{{username}}", "{{expireDate}}", "{{persona}}");
+        assertThat(rendered).doesNotContain("{{username}}", "{{expireDate}}", "{{persona}}", "{{reviewUrl}}");
     }
 
     @Test

@@ -49,7 +49,8 @@ public class EmailController {
         Map<String, String> variables = Map.of(
                 "username", request.getUsername(),
                 "expireDate", request.getExpireDate(),
-                "persona", request.getPersona());
+                "persona", request.getPersona(),
+                "reviewUrl", request.getReviewUrl());
 
         String subject = request.getSubject() != null
                 ? request.getSubject()

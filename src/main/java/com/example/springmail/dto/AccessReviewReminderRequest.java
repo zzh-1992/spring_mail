@@ -22,5 +22,8 @@ public class AccessReviewReminderRequest {
     @NotBlank
     private String persona;
 
+    @NotBlank
+    private String reviewUrl;
+
     private String subject;
 }

@@ -1,8 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
   <meta charset="UTF-8">
   <title>Access Review Reminder</title>
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <style type="text/css">
+    v\:* { behavior: url(#default#VML); display: inline-block; }
+  </style>
+  <![endif]-->
 </head>
 <body style="font-family: Arial, sans-serif; color: #333; margin: 0; padding: 24px; background: #f0f2f5;">
   <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; margin: 0 auto;">
@@ -57,6 +69,37 @@
              alt="Access review steps"
              width="544"
              style="display: block; max-width: 100%; height: auto; margin-bottom: 24px; border-radius: 6px; border: 1px solid #e2e6ea;">
+
+        <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center"
+               style="margin: 0 auto 24px;">
+          <tr>
+            <td align="center">
+              <!--[if mso]>
+              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word"
+                href="{{reviewUrl}}" style="height:44px;v-text-anchor:middle;width:260px;" arcsize="60%"
+                stroke="f" fillcolor="#2563eb">
+                <w:anchorlock/>
+                <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">
+                  Review Access Now
+                </center>
+              </v:roundrect>
+              <![endif]-->
+              <!--[if !mso]><!-->
+              <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center" bgcolor="#2563eb"
+                      style="background-color: #2563eb; border-radius: 6px;">
+                    <a href="{{reviewUrl}}" target="_blank"
+                       style="background-color: #2563eb; border-radius: 6px; color: #ffffff; display: inline-block; font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 44px; text-align: center; text-decoration: none; padding: 0 28px; -webkit-text-size-adjust: none;">
+                      Review Access Now
+                    </a>
+                  </td>
+                </tr>
+              </table>
+              <!--<![endif]-->
+            </td>
+          </tr>
+        </table>
 
         <p style="margin: 0 0 8px; line-height: 1.6;">
           If no action is taken before <strong>{{expireDate}}</strong>, your access may be revoked automatically.
